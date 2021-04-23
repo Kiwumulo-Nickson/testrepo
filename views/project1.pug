@@ -1,0 +1,70 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' type='text/css' href='project1.css')
+  title Document
+// <h1> Registration Form</h1>
+form(name='registration' action='/nick' method='POST' onsubmit='return validate()')
+  fieldset
+    legend Farmer One Registration Form.
+    label(for='Name')  Name: 
+    input#fname(type='text' name='name' placeholder='Name')
+    br
+    br
+    label(for='Ward') Ward
+    input#fward(type='text' name='Ward' placeholder='Ward ')
+    br
+    br
+    lable(for='Period_of_stay_in_Ward ')   Period of stay in the Ward
+    input(type='text' name='Period of stay in Ward' placeholder='Period of stay in Ward')
+    br
+    br
+    label(for='Unique_FO_number') Unique FO number
+    input#ufn(type='text' name='Unique  FO number ' placeholder='Unique  FO number ')
+    br
+    br
+    label(for='NIN ') NIN
+    input#fnin(type='text' name='NIN' placeholder='NIN')
+    br
+    br
+    label(for='Home_Address ') Home Address
+    input#faddress(type='text' name='Home Address' placeholder='Home Address')
+    br
+    br
+    label(for='Contact') Contact
+    input(type='text' name='Phone Number' placeholder='Phone Number')
+    br
+    br
+    label(for='Registration_Date') Registration Date
+    input(type='date' name='Date of registration')
+    br
+    br
+    label(for='Date_of_birth') Date of birth
+    input(type='date' name='Date of birth' pattern='\d{4}-\d{2}-\d{2}' title='YYYY-MM-DD')
+    br
+    br
+    label#gender Sex (Choose Male or Female)
+    input(type='radio' name='Male' value='Male')
+    span Male
+    input(type='radio' name='Female' value='Female')
+    span Female
+    br
+    br
+    select(name='Residence Type')
+      option(value='Default') Choose your Residence Type
+      option(value='AB') TEMPORAL
+      option(value='AZ') PERMANENT
+    br
+    br
+    select(name='Activities')
+      option(value='Default') Select your Activity
+      option(value='') Poultry
+      option(value='') Horticulture
+      option(value='') Dairy product&apos;s Management
+    br
+    br
+    input(type='submit' name='submit' placeholder='submit')
+// </div>
+script(src='project1.js')
+

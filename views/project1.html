@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="project1.css" >
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- <h1> Registration Form</h1> -->
+    <form  name="registration"  action="/nick"   method="POST"  onsubmit="return validate()">
+      <fieldset>
+        <legend>Farmer One Registration Form.</legend>
+       <label for="Name" > Name: </label>
+       <input type="text" name="name"  placeholder="Name"   id="fname"><br><br>    
+       <label for="Ward" >Ward</label>
+       <input type="text" name="Ward"  placeholder="Ward " id="fward"><br><br>
+       <lable for="Period_of_stay_in_Ward ">  Period of stay in the Ward</lable>
+       <input type="text"  name="Period of stay in Ward"  placeholder="Period of stay in Ward"><br><br>
+       <label for="Unique_FO_number">Unique FO number</label>
+       <input type="text" name="Unique  FO number "  placeholder="Unique  FO number " id="ufn"><br><br>
+       <label for="NIN ">NIN</label>
+       <input type="text" name="NIN"  placeholder="NIN"  id="fnin"><br><br>
+       <label for="Home_Address ">Home Address</label>
+       <input type="text" name="Home Address"  placeholder="Home Address" id="faddress"><br><br>
+       <label for="Contact">Contact</label>
+       <input type="text" name="Phone Number"  placeholder="Phone Number"><br><br>
+       <label for="Registration_Date">Registration Date</label>
+       <input type="date" name="Date of registration" ><br><br>
+       <label for="Date_of_birth">Date of birth</label>
+       <input type="date" name="Date of birth" pattern="\d{4}-\d{2}-\d{2}" title="YYYY-MM-DD" ><br><br>
+       <label id="gender">Sex (Choose Male or Female)</label>
+       <input type="radio" name="Male" value="Male" ><span>Male</span>
+       <input type="radio" name="Female" value="Female" ><span>Female</span><br><br>
+       <select  name="Residence Type">
+         <option value="Default" >Choose your Residence Type</option>
+         <option value="AB">TEMPORAL</option>
+         <option value="AZ" >PERMANENT</option>
+
+       </select><br><br>
+       <select  name="Activities">
+         <option value="Default">Select your Activity</option>
+         <option value="" >Poultry</option>
+         <option value="">Horticulture</option>
+         <option value="">Dairy product's Management</option>
+         
+         
+       </select><br><br>
+       
+       <input type="submit" name="submit" placeholder="submit"  >
+
+      </fieldset> 
+    </form>
+<!-- </div> -->
+</body>
+ <script src="project1.js"></script> 
+</html>
